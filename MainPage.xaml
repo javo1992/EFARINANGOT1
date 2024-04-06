@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EFARINANGOT1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+           
+            <Label
+                Text="FORMULARIO!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label Text="Nombre"/>
+            <Entry
+                x:Name="txt_nombre"
+                Placeholder="Nombre">
+            </Entry>
+            
+            <Label Text="Apellido"/>
+            <Entry
+                x:Name="txt_apellido"
+                Placeholder="Apellido">
+            </Entry>
+
+
+            <Label Text="Edad"/>
+            <Entry
+                x:Name="txt_edad"
+                Placeholder="Edad">
+            </Entry>
+
+
+            <Label Text="Salario"/>
+            <Entry
+                x:Name="txt_salario"
+                Placeholder="Nombre">
+            </Entry>
+
+            <Button
+                x:Name="btn_Calcular"
+                Clicked="btn_Calcular_Clicked"
+                Text="Calcular Aporte">
+            </Button>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
